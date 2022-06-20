@@ -66,7 +66,7 @@ def main():
     
     plt.subplot(6,2,12)
     plt.title('Binary Histogram')
-    plt.hist(blue.ravel(),256,[0,256])
+    plt.hist(binary.ravel(),256,[0,256])
 
     plt.show()
 	
