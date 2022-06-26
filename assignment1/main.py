@@ -3,9 +3,9 @@ import cv2
 
 def main():
     img_path = r'E:\Digital-image-ProcessingLab\assignment1\images\nature.jpg'
-    print(img_path)
+    # print(img_path)
     rgb = plt.imread(img_path)
-    print(rgb.shape, rgb.max(), rgb.min())
+    # print(rgb.shape, rgb.max(), rgb.min())
 
     red = rgb[:, :, 0]
     green = rgb[:, :, 1]
@@ -17,7 +17,7 @@ def main():
 
     _, binary = cv2.threshold(grayscale, 50, 255, cv2.THRESH_BINARY)
 
-    plt.figure(figsize=(40, 40))
+    # plt.figure(figsize=(40, 40))
     plt.subplot(6,2,1)
     plt.title('Rgb image')
     plt.imshow(rgb)

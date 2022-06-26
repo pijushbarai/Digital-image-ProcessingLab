@@ -13,7 +13,7 @@ def show_image(row,col,pos,img,title):
 def main():
     path = r'E:\Digital-image-ProcessingLab\assignment5\image\bird.jpg'
     rgb_image = imread(path)
-    grayscale_image = cv2.cvtColor(rgb_image, cv2.COLOR_BGR2GRAY)
+    grayscale_image = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2GRAY)
     LaplacianFilter = np.array([[-1,-1,-1],[-1,8,-1],[-1,-1,-1]])
     horizontalSobelFilter = np.array([[1,0,-1],[2,0,-2],[1,0,-1]])
     verticalSobelFilter = np.array([[1,2,1],[0,0,0],[-1,-2,-1]])
