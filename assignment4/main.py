@@ -10,15 +10,13 @@ def main():
     img = plt.imread(img_path)
     grayscale = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 
-
-    print(grayscale.shape)
-    grayscale = np.array(grayscale)
+    
     grayscale = grayscale.reshape(-1)
     print(grayscale.shape)
 
 
     x = np.arange(0,256)
-    y = np.zeros((256,),dtype=int)
+    y = np.zeros((256),dtype=int)
     for i in range(len(grayscale)):
         y[grayscale[i]] += 1
     
