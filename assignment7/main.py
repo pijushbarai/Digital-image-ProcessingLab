@@ -10,7 +10,7 @@ def showImage(row,col,pos,img,title):
 
 def showHist(row,col,pos,img,title):
     plt.subplot(row,col,pos)
-    plt.plot(img,color= 'r')
+    plt.plot(img,color='r')
     plt.title(title)
 
 def main():

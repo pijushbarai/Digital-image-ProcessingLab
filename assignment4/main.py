@@ -16,7 +16,7 @@ def main():
 
 
     x = np.arange(0,256)
-    y = np.zeros((256),dtype=int)
+    y = np.zeros((256))
     for i in range(len(grayscale)):
         y[grayscale[i]] += 1
     
