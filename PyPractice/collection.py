@@ -1,20 +1,27 @@
 def main():
     n = int(input())
     arr= []
+    customer = []
     arr = list(map(int, input().split()))
     # print(len(arr),'asdfasdfasf')
     number_of_shoe = int(input())
-    ans = 0
     for j in range(number_of_shoe):
         shoe_info = list(map(int,input().split()))
-        temp = []
-        ind = []
-        for i in range(arr.index(arr[-1])+1):
-            if arr[i] == shoe_info[0]:
-                arr[i] = 0
-                temp.append(shoe_info[1])
-                ans = ans + shoe_info[1]
+        customer.append(shoe_info)
+    # for i in range(number_of_shoe):
+    #     for j in range(i+1,number_of_shoe):
+    #         if(customer[i][1] <= customer[j][1]):
+    #             temp = customer[i]
+    #             customer[i] = customer[j]
+    #             customer[j] = temp
+    ans = 0 
+    for i in range(number_of_shoe):
+        for j in range(n):
+            if(arr[j] == customer[i][0]):
+                ans = ans + customer[i][1]
+                arr[j] = 0
                 break
-               
     print(ans)
+
+    # print(customer)
 main()
