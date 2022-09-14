@@ -15,6 +15,8 @@ def main():
     
 
     #kernels
+    kernels = np.ones([3,3])
+    print(kernels)
     identityKernel = np.array([[0,0,0],[0,1,0],[0,0,0]])
     ridgeDitectionKernel = np.array([[-1,-1,-1],[-1,16,-1],[-1,-1,-1]])
     ridgeDitectionKernel2 = np.array([[-1,-1,-1],[-1,8,-1],[-1,-1,-1]])
